@@ -50,17 +50,17 @@ winner_label.pack()
 input_frame = Frame(game_window, pady=20)
 input_frame.pack()
 
-rock_btn = Button(input_frame,text='Rock',font=('Segoe UI Black',15, 'bold'), width=10,height=3, bd=2, bg="#cc6600",fg="white",activebackground="#3399ff",activeforeground="white", command= lambda:player_choice(options[0]) )
+rock_btn = Button(input_frame,text='Rock',font=('Segoe UI Black',15, 'bold'), width=10,height=3, bd=2, bg="#00cc66",fg="white",activebackground="#3399ff",activeforeground="white", command= lambda:player_choice(options[0]) )
 rock_btn.grid(row= 1, column=1,padx=15, pady=8)
 
-paper_btn = Button(input_frame,text='Paper',font=('Segoe UI Black',15, 'bold'), width=10,height=3, bd=2, bg="#cc6600",fg="white",activebackground="#ff007f",activeforeground="white", command= lambda:player_choice(options[1]) )
+paper_btn = Button(input_frame,text='Paper',font=('Segoe UI Black',15, 'bold'), width=10,height=3, bd=2, bg="#00cc66",fg="white",activebackground="#ff007f",activeforeground="white", command= lambda:player_choice(options[1]) )
 paper_btn.grid(row= 1, column=2,padx=15, pady=8)
 
-scissor_btn = Button(input_frame,text='Scissor',font=('Segoe UI Black',15, 'bold'), width=10,height=3, bd=2, bg="#cc6600",fg="white",activebackground="#cc00cc",activeforeground="white", command= lambda:player_choice(options[2]) )
+scissor_btn = Button(input_frame,text='Scissor',font=('Segoe UI Black',15, 'bold'), width=10,height=3, bd=2, bg="#00cc66",fg="white",activebackground="#cc6600",activeforeground="white", command= lambda:player_choice(options[2]) )
 scissor_btn.grid(row= 1, column=3,padx=20, pady=8)
 
 # Displaying Scores and Choices
-score_label = Label(input_frame, text="Scores : ", font=('Segoe UI Black',15,"bold"), fg="#00994c")
+score_label = Label(input_frame, text="Scores : ", font=('Segoe UI Black',15,"bold"), fg="purple")
 score_label.grid(row=2,column=2,pady=30)
 
 player_choice_label = Label(input_frame, text="You Selected :-- ", font=('Times New Roman',15,"bold"), fg="#3333ff")
